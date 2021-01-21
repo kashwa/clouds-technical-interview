@@ -15,7 +15,6 @@ Route::prefix('admin')->group(function () {
 Route::group(['prefix'=>'admin', 'middleware' => ['auth:admin']], function () {
 
     Route::get('/', 'AdminModuleController@dashbord')->name('admins');
-//    Route::resource('/admins', 'AdminModuleController');
     Route::get('/clients-ajax', 'AdminModuleController@dataTables');
     Route::get('/update/{user_id}/status', 'AdminModuleController@updateClientStatus');
     Route::get('/delete/{user_id}/client', 'AdminModuleController@deleteClient');
