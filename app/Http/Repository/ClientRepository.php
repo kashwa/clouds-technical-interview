@@ -40,6 +40,11 @@ class ClientRepository
         return $user->first()->status == 1 ? $user->update(['status' => 0]) : $user->update(['status' => 1]);
     }
 
+    /**
+     * Delete Client object.
+     * 
+     * @param $id
+     */
     public function delete($id)
     {
         User::destroy($id);

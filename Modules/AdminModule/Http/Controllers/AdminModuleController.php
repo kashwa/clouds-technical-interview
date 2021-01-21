@@ -25,10 +25,16 @@ class AdminModuleController extends Controller
         return view('adminmodule::admin.index');
     }
 
+    /**
+     * Update client status [Active / Inactive].
+     *
+     * @param $id
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function updateClientStatus($id)
     {
         $this->clientRepository->updateClient($id);
-        // return redirect()->to('admin');
+        return redirect()->to('admin');
     }
 
     public function deleteClient($id)

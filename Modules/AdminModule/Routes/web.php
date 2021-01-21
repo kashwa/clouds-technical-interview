@@ -5,7 +5,7 @@
  */
 Route::prefix('admin')->group(function () {
 
-    Route::get('login', 'Auth\AdminAuthController@index')->name('admin.login');
+    Route::get('login', 'Auth\AdminAuthController@index')->name('login');
     Route::post('login', 'Auth\AdminAuthController@login')->name('admin.login');
     Route::get('logout', 'Auth\AdminAuthController@logout')->name('admin.logout');
 
