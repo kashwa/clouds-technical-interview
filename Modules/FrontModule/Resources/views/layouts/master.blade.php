@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Module FrontModule</title>
-
+        <title>Payment Page</title>
+        @yield('head')
        {{-- Laravel Mix - CSS File --}}
        {{-- <link rel="stylesheet" href="{{ mix('css/frontmodule.css') }}"> --}}
 
@@ -15,5 +15,8 @@
 
         {{-- Laravel Mix - JS File --}}
         {{-- <script src="{{ mix('js/frontmodule.js') }}"></script> --}}
+        @yield('js')
+
     </body>
+
 </html>

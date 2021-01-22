@@ -1,9 +1,4 @@
-@extends('frontmodule::layouts.master')
+<h1>HomePage</h1>
 
-@section('content')
-    <h1>Hello World</h1>
-
-    <p>
-        This view is loaded from module: {!! config('frontmodule.name') !!}
-    </p>
-@endsection
+<a href="{{url('/user/logout')}}"> Click here to Logout!</a>
+<p>This is your homepage, You're logged in successfully</p>
